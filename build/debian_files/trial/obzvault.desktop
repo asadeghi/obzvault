@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=OBZVault Trial
+Comment=Edit and encrypt text files
+Exec=vault %f
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=/usr/share/obzvaulttrial/app.png
+Categories=GNOME;GTK;Utility;TextEditor
+MimeType=application/offbyzero.obzvault;

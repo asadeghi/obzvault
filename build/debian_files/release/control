@@ -1,0 +1,16 @@
+Source: obzvault
+Section: editors
+Priority: optional
+Maintainer: OFFBYZERO PTY. LTD. <support@offbyzero.com>
+Build-Depends: debhelper (>= 7), sun-java6-jre, sun-java6-jdk
+Standards-Version: 3.8.0
+Homepage: http://www.offbyzero.com/obzvault
+
+Package: obzvault
+Architecture: all
+Depends: sun-java6-jre
+Replaces: obzvaulttrial
+Description: OffByZero Vault Secure Text Editor
+ OffByZero Vault is a secure text editor that uses the
+ TripleDES symmetric encryption algorithm.  OBZVault is 
+ available on MS Windows, Linux, and Mac OS X.

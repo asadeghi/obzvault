@@ -1,0 +1,12 @@
+debian/input/app.png /usr/share/obzvaulttrial
+debian/input/doc.png /usr/share/obzvaulttrial
+debian/input/application-offbyzero.obzvault.png /usr/share/icons/hicolor/128x128/mimetypes
+debian/input/obzvault.jar /usr/share/obzvaulttrial
+debian/input/AbsoluteLayout.jar /usr/share/obzvaulttrial/lib
+debian/input/appframework-1.0.3.jar /usr/share/obzvaulttrial/lib
+debian/input/swing-layout-1.0.3.jar /usr/share/obzvaulttrial/lib
+debian/input/swing-worker-1.1.jar /usr/share/obzvaulttrial/lib
+debian/input/ui.jar /usr/share/obzvaulttrial/lib
+debian/input/copyright /usr/share/doc/obzvaulttrial
+debian/input/vault /usr/bin
+debian/obzvault.desktop /usr/share/applications

@@ -1,0 +1,7 @@
+Build Process
+=============
+
+1. On Linux, ./build_linux.rb /mnt/build/obzvault
+2. On Winodws, ./build_win32.bat \\obz1\build\obzvault 3.2.XYZ
+3. On MacOS, ./build_macos.rb /Volumes/build/obzvault
+ 
