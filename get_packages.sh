@@ -1,15 +1,29 @@
 #!/bin/bash
 
-# Copyright (c) 2009 OFFBYZERO PTY LTD
+##########################################################################
+# Copyright (C) 2009 - 2011, Duncan Bayne & Armin Sadeghi
 #
-# All rights reserved. This code may not be redistributed in any fashion.
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of version 3 of the GNU Lesser General Public License 
+# as published by the Free Software Foundation.
 #
+# This program is distributed in the hope that it will be
+# useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+# Public License for more details.
+#
+# The GNU Lesser General Public License can be viewed at
+# http://www.gnu.org/licenses/lgpl-3.0.txt
+#
+# To find out more about ObzVault, visit
+# https://github.com/asadeghi/obzvault
+##########################################################################
 
 #
-# NOTE: this assumes Ubuntu 9.10
+# NOTE: This assumes Ubuntu 10.04.  Don't run in Emacs (Whiptail EULA).
 #
 
-sudo apt-get install proguard
-sudo apt-get install sun-java5-bin sun-java5-jre sun-java5-jdk sun-java5-doc
-sudo apt-get install netbeans
-sudo apt-get install debhelper lintian ant
+sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
+sudo apt-get update
+
+sudo apt-get install proguard sun-java6-bin sun-java6-jre sun-java6-jdk netbeans debhelper lintian ant -y

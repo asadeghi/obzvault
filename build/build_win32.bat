@@ -1,3 +1,22 @@
+rem ##########################################################################
+rem Copyright (C) 2009 - 2011, Duncan Bayne & Armin Sadeghi
+rem 
+rem This program is free software; you can redistribute it and/or modify it
+rem under the terms of version 3 of the GNU Lesser General Public License 
+rem as published by the Free Software Foundation.
+rem 
+rem This program is distributed in the hope that it will be
+rem useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+rem MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+rem Public License for more details.
+rem 
+rem The GNU Lesser General Public License can be viewed at
+rem http://www.gnu.org/licenses/lgpl-3.0.txt
+rem 
+rem To find out more about ObzVault, visit
+rem https://github.com/asadeghi/obzvault
+rem ##########################################################################
+
 @echo off
 setlocal
 
