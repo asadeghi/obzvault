@@ -8,10 +8,10 @@
 AppId={{8F0FDA2B-6B1A-4716-9469-491803AD8A8B}}
 AppName=OffByZero Vault Trial
 AppVerName=OffByZero Vault [VERSION] Trial
-AppPublisher=OFFBYZERO PTY. LTD.
-AppPublisherURL=http://www.offbyzero.com/obzvault
-AppSupportURL=http://www.offbyzero.com/obzvault
-AppUpdatesURL=http://www.offbyzero.com/obzvault
+AppPublisher=Duncan Bayne & Armin Sadeghi
+AppPublisherURL=https://github.com/asadeghi/obzvault
+AppSupportURL=https://github.com/asadeghi/obzvault
+AppUpdatesURL=https://github.com/asadeghi/obzvault
 DefaultDirName={pf}\OffByZero\OBZVault [VERSION] Trial
 DefaultGroupName=OffByZero Vault [VERSION] Trial
 LicenseFile=..\shared_files\licence.rtf

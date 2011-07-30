@@ -3,4 +3,9 @@ obzvaulttrial (VERSION) stable; urgency=low
   * Initial creation of .deb package.
 
  -- OFFBYZERO PTY. LTD. <support@offbyzero.com>  Sun, 03 May 2009 13:09:00 +1000
+
+  * Released under the LGPL.
+
+ -- Sat Jul 30 01:13:34 + 1000
+
 	

@@ -1,10 +1,10 @@
 Source: obzvaulttrial
 Section: editors
 Priority: optional
-Maintainer: OFFBYZERO PTY. LTD. <support@offbyzero.com>
+Maintainer: Armin Sadeghi (https://github.com/asadeghi)
 Build-Depends: debhelper (>= 7), sun-java6-jre, sun-java6-jdk
 Standards-Version: 3.8.0
-Homepage: http://www.offbyzero.com/obzvault
+Homepage: https://github.com/asadeghi/obzvault
 
 Package: obzvaulttrial
 Architecture: all
@@ -15,6 +15,6 @@ Description: OffByZero Vault Secure Text Editor - Trial
  available on MS Windows, Linux, and Mac OS X.
  .
  The Trial version is limited to documents of 128 
- characters.  You can purchase a full version from:
+ characters.  You can download the full version from:
  .
- http://www.offbyzero.com/obzvault
+ https://github.com/asadeghi/obzvault
