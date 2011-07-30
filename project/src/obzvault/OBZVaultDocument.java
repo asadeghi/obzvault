@@ -38,7 +38,7 @@ public class OBZVaultDocument implements IOBZVaultDocument, Serializable {
     private SecretKey _sk;
 
     // Change this to a value greater than 6502f to enable trial status.
-    private Float _dwIsTrialFlag = 6502f;
+    private Float _dwIsTrialFlag = 8088f;
 
     public OBZVaultDocument() {
         _pcs = new PropertyChangeSupport(this);

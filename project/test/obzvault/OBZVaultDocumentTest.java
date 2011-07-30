@@ -68,7 +68,7 @@ public class OBZVaultDocumentTest {
 
     @Test
     public void testGetTrialStatusIsFalseByDefault() {
-        assertEquals(6502f, _docTest.getTrialStatus(), 0.01f);
+        assertEquals(8088f, _docTest.getTrialStatus(), 0.01f);
     }
 
     @Test

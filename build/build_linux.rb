@@ -53,7 +53,7 @@ def compile(is_trial, output_path, version)
   safe_system("sed -i \"s/private Float _dwIsTrialFlag = ....f;/private Float _dwIsTrialFlag = #{dwIsTrialFlag}f;/g\" ../project/src/obzvault/OBZVaultDocument.java")
   safe_system("sed -i \"s/assertEquals(....f, _docTest.getTrialStatus(), 0.01f);/assertEquals(#{dwIsTrialFlag}f, _docTest.getTrialStatus(), 0.01f);/g\" ../project/test/obzvault/OBZVaultDocumentTest.java")
   safe_system("ant clean test jar -buildfile ../project/build.xml")
-  safe_system("svn revert ../project/src/obzvault/resources/OBZVaultApp.properties")
+  safe_system("git checkout ../project/src/obzvault/resources/OBZVaultApp.properties")
   safe_system("cp -R ../project/dist #{output_path}")
 end
 
@@ -85,18 +85,7 @@ def build_deb(is_trial, output_path, version)
 end
 
 def get_version()
-  safe_system("svn update")
-  revision = nil
-  IO.foreach("|svn info .") { |x| 
-    if (x =~ /Revision: (\d+)/)
-      revision = $1.to_i    
-    end
-  }
-  if revision == nil
-    raise "Could not determine revision"
-  end
-
-  version = nil
+   version = nil
   open("version.txt", "r") { | f | 
     version = f.gets().chop()
     f.close()
@@ -105,7 +94,7 @@ def get_version()
     raise "Could not read version.txt"
   end
 
-  return "#{version}.#{revision}"
+  return "#{version}"
 end
 
 def show_usage
