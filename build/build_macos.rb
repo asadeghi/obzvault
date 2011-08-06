@@ -25,12 +25,6 @@ def safe_rmdir(path)
   end
 end
 
-def safe_rm(path)
-  if (File.exists?(path))
-    safe_system("rm -f #{path}")
-  end
-end
-
 def safe_system(command)
   if (!system(command))
     raise "FAILED!"
@@ -77,17 +71,6 @@ def build_dmg(dmg_original_path, dmg_new_path, dmg_name, app_path)
 end
 
 def get_version()
-  safe_system("svn update .")
-  revision = nil
-  IO.foreach("|svn info .") { |x| 
-    if (x =~ /Revision: (\d+)/)
-      revision = $1.to_i    
-    end
-  }
-  if revision == nil
-    raise "Could not determine revision"
-  end
-
   version = nil
   open("version.txt", "r") { | f | 
     version = f.gets().chop()
@@ -96,7 +79,7 @@ def get_version()
     raise "Could not read version.txt"
   end
 
-  return "#{version}.#{revision}"
+  return "#{version}"
 end
 
 def show_usage

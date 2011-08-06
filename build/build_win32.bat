@@ -21,7 +21,7 @@ rem ##########################################################################
 setlocal
 
 set OUTPUTDIR=%1
-set VERSION=%2
+set /p VERSION=<version.txt
 
 if "%OUTPUTDIR%" == "" goto usage
 if "%VERSION%" == "" goto usage
@@ -46,9 +46,9 @@ GOTO success
   goto finished
 
 :usage
-  echo usage: build_windows.bat outputdir version
+  echo usage: build_windows.bat outputdir
   echo.
-  echo example: build_windows.bat \\obz1\build\vault 3.2.506
+  echo example: build_windows.bat \\obz1\build\vault
   goto finished
 
 :error

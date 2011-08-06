@@ -1,7 +1,11 @@
 Build Process
 =============
 
+The application is built firstly on linux, and the output directed to
+a common server location. This server location is then used by subsequent
+Windows and MacOS builds to enable them to use the same build artifacts.
+
 1. On Linux, ./build_linux.rb /mnt/build/obzvault
-2. On Winodws, ./build_win32.bat \\obz1\build\obzvault 3.2.XYZ
+2. On Windows, ./build_win32.bat \\server\build\obzvault
 3. On MacOS, ./build_macos.rb /Volumes/build/obzvault
  

@@ -85,7 +85,7 @@ def build_deb(is_trial, output_path, version)
 end
 
 def get_version()
-   version = nil
+  version = nil
   open("version.txt", "r") { | f | 
     version = f.gets().chop()
     f.close()
